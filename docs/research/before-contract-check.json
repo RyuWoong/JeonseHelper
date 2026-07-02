@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "계약서 쓰기 전 확인할 것",
+    "audience": "계약 직전 위험을 점검하려는 사람",
+    "contentType": "question-tree-roadmap",
+    "version": "0.2.1",
+    "lastUpdatedAt": "2026-07-01"
+  },
+  "document": {
+    "sections": [
+      {
+        "id": "s1",
+        "title": "계약서 쓰기 전 확인할 것",
+        "overview": "계약서에 서명하기 전에는 사람, 돈, 권리, 날짜를 확정해야 합니다. 불확실한 항목이 있으면 특약으로 남기거나 계약을 미룹니다.",
+        "questions": [
+          {
+            "id": "s1_q1",
+            "question": "계약 당사자 확인",
+            "answer": "계약서의 임대인은 등기부등본상 소유자와 같아야 합니다. 공동소유라면 모든 소유자의 동의와 서명이 필요한지 확인하고, 대리인이 나오면 4-3 계약 당일 확인할 것의 대리 계약 기준을 적용합니다.",
+            "situationTags": ["contract", "identity"],
+            "urgency": "high",
+            "actions": ["등기부상 소유자와 계약서 임대인을 대조합니다.", "공동소유 여부를 확인합니다.", "대리 계약이면 위임장과 인감증명서를 요구합니다.", "보증금 이체 계좌가 소유자 명의인지 확인합니다."],
+            "requiredDocuments": ["등기부등본", "신분증", "위임장", "인감증명서", "계약서 초안"],
+            "relatedAgencies": ["인터넷등기소", "공인중개사", "법률상담기관"],
+            "deadlineNote": "당사자 확인이 끝나기 전에는 계약금을 보내지 않습니다.",
+            "sources": [{"title": "대법원 인터넷등기소", "url": "https://www.iros.go.kr/", "publisher": "대한민국 법원", "lastVerifiedAt": "2026-07-01", "note": "등기부등본 열람·발급 경로 확인"}],
+            "followups": [{"id": "s1_q1_f1", "question": "공동명의인데 한 명만 나오면요?", "answer": "다른 소유자의 동의와 대리권을 확인해야 합니다. 서류 없이 한 명만으로 진행하면 나중에 분쟁이 생길 수 있습니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q2",
+            "question": "특약 넣기",
+            "answer": "특약은 말로 약속한 내용을 계약서에 남기는 장치입니다. 근저당 말소, 보증보험 가입 불가 시 계약 해제, 잔금 전 권리 변동 금지, 세금 체납 관련 확인, 시설 하자 처리 등을 구체적으로 적습니다.",
+            "situationTags": ["contract", "special-terms"],
+            "urgency": "high",
+            "actions": ["필수 특약을 계약서 초안에 미리 넣습니다.", "근저당 말소 조건과 말소 시점을 명확히 씁니다.", "보증보험 가입 불가 시 처리 방식을 정합니다.", "구두 약속은 문자나 계약서로 남깁니다."],
+            "requiredDocuments": ["계약서 초안", "등기부등본", "보증보험 상담 결과", "대출 상담 결과", "시설 확인 사진"],
+            "relatedAgencies": ["공인중개사", "보증기관", "법률상담기관"],
+            "deadlineNote": "특약은 서명 전에 합의해야 합니다. 서명 후 추가하려면 상대방 동의가 필요해 어려워질 수 있습니다.",
+            "sources": [{"title": "HUG 안심전세포털", "url": "https://www.khug.or.kr/jeonse/index.jsp", "publisher": "주택도시보증공사", "lastVerifiedAt": "2026-07-01", "note": "전세계약 유의사항 확인"}],
+            "followups": [{"id": "s1_q2_f1", "question": "특약이 많으면 집주인이 싫어하지 않을까요?", "answer": "핵심 안전장치까지 빼면서 계약할 필요는 없습니다. 안전 특약을 거부하는 이유가 납득되지 않으면 매물을 다시 보는 편이 낫습니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q3",
+            "question": "보증보험 가능 여부 확인",
+            "answer": "보증보험은 계약 후 신청하는 경우가 많지만, 가능성은 계약 전에 확인해야 합니다. 주택 유형, 보증금, 선순위 권리, 임대인 제한, 전입·확정일자 요건 때문에 가입이 거절될 수 있습니다.",
+            "situationTags": ["guarantee", "insurance"],
+            "urgency": "high",
+            "actions": ["HUG, HF, SGI 중 가능한 보증기관을 확인합니다.", "등기부와 보증금으로 가입 가능성을 사전 상담합니다.", "가입 불가 시 계약 해제 또는 보증금 조정 특약을 검토합니다.", "입주 후 4-4 입주 후 바로 해야 할 것에서 실제 가입을 확인합니다."],
+            "requiredDocuments": ["임대차계약서 초안", "등기부등본", "건축물대장", "보증금 정보", "대출 상담 자료"],
+            "relatedAgencies": ["HUG", "HF", "SGI서울보증", "은행"],
+            "deadlineNote": "계약 후 가입이 안 되면 선택지가 줄어듭니다. 계약 전 사전 확인과 특약이 중요합니다.",
+            "sources": [{"title": "HUG 전세보증금반환보증 가입 안내", "url": "https://www.khug.or.kr/jeonse/web/s04/s040201.jsp", "publisher": "주택도시보증공사", "lastVerifiedAt": "2026-07-01", "note": "보증가입 안내와 전세계약 유의사항 메뉴 확인"}],
+            "followups": [{"id": "s1_q3_f1", "question": "보증보험 가능하다는 중개사 말만 믿어도 되나요?", "answer": "말만으로는 부족합니다. 보증기관 또는 은행 상담 기록을 남기고, 실제 가입이 안 될 때 처리할 특약을 계약서에 넣습니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q4",
+            "question": "대출 가능 여부 확인",
+            "answer": "전세대출은 내 소득뿐 아니라 집의 권리 상태와 보증기관 심사에도 영향을 받습니다. 대출이 안 되면 잔금을 못 치르는 문제가 생기므로, 계약 전 은행 상담과 대출 불가 시 처리 특약을 준비합니다.",
+            "situationTags": ["loan", "contract"],
+            "urgency": "medium",
+            "actions": ["은행에 매물 주소와 보증금으로 사전 상담을 받습니다.", "대출 실행 조건과 잔금일을 맞춥니다.", "대출 불가 시 계약금 반환 조건을 특약으로 검토합니다.", "대출 승인 전 큰 금액을 무리하게 송금하지 않습니다."],
+            "requiredDocuments": ["소득자료", "신분증", "계약서 초안", "등기부등본", "건축물대장", "대출 상담 기록"],
+            "relatedAgencies": ["은행", "보증기관", "공인중개사"],
+            "deadlineNote": "대출 심사에는 시간이 걸립니다. 잔금일을 너무 촉박하게 잡지 않습니다.",
+            "sources": [{"title": "HUG 안심전세포털", "url": "https://www.khug.or.kr/jeonse/index.jsp", "publisher": "주택도시보증공사", "lastVerifiedAt": "2026-07-01", "note": "보증과 전세계약 안전 정보 확인"}],
+            "followups": [{"id": "s1_q4_f1", "question": "대출이 늦어지면 어떻게 하나요?", "answer": "잔금일 조정 가능성을 미리 특약이나 협의 기록으로 남겨야 합니다. 이미 늦어졌다면 은행, 임대인, 중개사에게 같은 날 상황을 공유합니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q5",
+            "question": "잔금일과 입주일 조정",
+            "answer": "잔금일, 이사일, 전입신고일, 확정일자일은 권리 보호와 직접 연결됩니다. 가능하면 잔금 지급, 열쇠 인도, 입주, 전입신고와 확정일자를 같은 날 또는 최대한 가깝게 처리합니다.",
+            "situationTags": ["move-in", "schedule"],
+            "urgency": "high",
+            "actions": ["잔금일과 실제 입주 가능일을 맞춥니다.", "전입신고와 확정일자 가능 시간을 확인합니다.", "잔금 전 등기부 재확인 일정을 넣습니다.", "잔금 이체 후 열쇠와 인도 확인을 받습니다."],
+            "requiredDocuments": ["계약서", "잔금 이체 계획", "전입신고 준비자료", "확정일자 준비자료", "이사 일정표"],
+            "relatedAgencies": ["주민센터", "정부24", "인터넷등기소", "공인중개사"],
+            "deadlineNote": "전입신고와 확정일자는 미루지 않습니다. 입주 직후 4-4 입주 후 바로 해야 할 것을 바로 진행합니다.",
+            "sources": [{"title": "법제처 주택임대차 대항력 및 우선변제권 안내", "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=3&cnpClsNo=1&csmSeq=629", "publisher": "법제처 찾기쉬운 생활법령정보", "lastVerifiedAt": "2026-07-01", "note": "전입신고, 점유, 확정일자 요건 확인"}],
+            "followups": [{"id": "s1_q5_f1", "question": "잔금일과 이사일이 다르면 위험한가요?", "answer": "상황에 따라 위험이 커질 수 있습니다. 돈을 냈는데 점유나 전입이 늦어지는 구조라면 권리 보호 공백을 상담해야 합니다.", "hasChildren": false}]
+          }
+        ]
+      }
+    ]
+  },
+  "children": {}
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "입주 후 바로 해야 할 것",
+    "audience": "입주 직후 권리를 확보하려는 사람",
+    "contentType": "question-tree-roadmap",
+    "version": "0.2.1",
+    "lastUpdatedAt": "2026-07-01"
+  },
+  "document": {
+    "sections": [
+      {
+        "id": "s1",
+        "title": "입주 후 바로 해야 할 것",
+        "overview": "입주 후에는 전입신고, 확정일자, 점유 유지, 보증보험, 등기 재확인을 빠르게 처리해야 합니다. 계약이 끝난 것이 아니라 권리 보호가 시작되는 시점입니다.",
+        "questions": [
+          {
+            "id": "s1_q1",
+            "question": "전입신고",
+            "answer": "전입신고는 대항력과 연결되는 핵심 절차입니다. 실제 입주 후 가능한 빨리 처리하고, 세대주·세대원 구성과 주소·호수가 계약서와 맞는지 확인합니다.",
+            "situationTags": ["move-in", "resident-registration"],
+            "urgency": "high",
+            "actions": ["입주 즉시 전입신고를 합니다.", "주소, 동, 호수가 계약서와 같은지 확인합니다.", "전입신고 처리 결과를 저장합니다.", "주택임대차 신고 대상인지 함께 확인합니다."],
+            "requiredDocuments": ["신분증", "임대차계약서", "전입신고 확인 자료", "주민등록등본"],
+            "relatedAgencies": ["주민센터", "정부24"],
+            "deadlineNote": "전입신고는 미루지 않습니다. 입주와 잔금, 전입 사이에 공백이 생기면 권리 보호에 문제가 생길 수 있습니다.",
+            "sources": [{"title": "정부24 전입신고", "url": "https://www.gov.kr/portal/main", "publisher": "행정안전부", "lastVerifiedAt": "2026-07-01", "note": "온라인 전입신고 경로 확인"}, {"title": "법제처 주택임대차 대항력 안내", "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=3&cnpClsNo=1&csmSeq=629", "publisher": "법제처 찾기쉬운 생활법령정보", "lastVerifiedAt": "2026-07-01", "note": "대항력 요건 확인"}],
+            "followups": [{"id": "s1_q1_f1", "question": "전입신고만 하면 안전한가요?", "answer": "전입신고만으로 충분하지 않습니다. 실제 점유, 확정일자, 선순위 권리, 보증보험까지 함께 봐야 합니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q2",
+            "question": "확정일자",
+            "answer": "확정일자는 우선변제권과 연결됩니다. 계약서 원본 또는 전자계약 자료로 주민센터나 온라인 경로에서 처리하고, 처리일과 부여번호를 기록합니다.",
+            "situationTags": ["fixed-date", "priority"],
+            "urgency": "high",
+            "actions": ["계약서에 확정일자를 받습니다.", "확정일자 부여일과 번호를 기록합니다.", "주택임대차 신고와 함께 처리되는지 확인합니다.", "계약서 스캔본을 5-5 증거자료 보관함 만들기에 저장합니다."],
+            "requiredDocuments": ["임대차계약서", "신분증", "확정일자 부여 확인 자료", "주택임대차 신고 자료"],
+            "relatedAgencies": ["주민센터", "인터넷등기소", "정부24"],
+            "deadlineNote": "확정일자는 전입신고와 함께 최대한 빠르게 처리합니다. 늦어질수록 선순위 위험이 커질 수 있습니다.",
+            "sources": [{"title": "대법원 인터넷등기소", "url": "https://www.iros.go.kr/", "publisher": "대한민국 법원", "lastVerifiedAt": "2026-07-01", "note": "확정일자 신청 경로 확인"}, {"title": "법제처 주택임대차 우선변제권 안내", "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=3&cnpClsNo=1&csmSeq=629", "publisher": "법제처 찾기쉬운 생활법령정보", "lastVerifiedAt": "2026-07-01", "note": "우선변제권 요건 확인"}],
+            "followups": [{"id": "s1_q2_f1", "question": "전자계약이면 확정일자가 자동인가요?", "answer": "전자계약 방식과 신고 처리 여부에 따라 달라질 수 있습니다. 확정일자 부여 결과를 직접 확인하고 저장해야 합니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q3",
+            "question": "점유 유지",
+            "answer": "대항력은 전입신고뿐 아니라 실제 점유와 연결됩니다. 열쇠 인도, 이사 사진, 관리비 납부, 우편물 수령 등 실제 거주 흔적을 남기고 임의로 집을 비우지 않습니다.",
+            "situationTags": ["possession", "evidence"],
+            "urgency": "medium",
+            "actions": ["입주일 사진과 열쇠 수령 기록을 남깁니다.", "관리비와 공과금 납부 내역을 보관합니다.", "장기간 집을 비울 때 권리 문제가 없는지 상담합니다.", "집 상태 사진을 입주 직후 촬영합니다."],
+            "requiredDocuments": ["입주 사진", "열쇠 수령 기록", "관리비 고지서", "공과금 납부 내역", "우편물 수령 기록"],
+            "relatedAgencies": ["관리사무소", "공인중개사", "법률상담기관"],
+            "deadlineNote": "점유 관련 증거는 문제가 생긴 뒤 만들 수 없습니다. 입주 직후부터 남깁니다.",
+            "sources": [{"title": "법제처 주택임대차 대항력 안내", "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=3&cnpClsNo=1&csmSeq=629", "publisher": "법제처 찾기쉬운 생활법령정보", "lastVerifiedAt": "2026-07-01", "note": "대항력 요건 확인"}],
+            "followups": [{"id": "s1_q3_f1", "question": "짐만 조금 넣어둬도 점유인가요?", "answer": "구체적 상황에 따라 다툼이 생길 수 있습니다. 실제 거주와 사용 사실을 명확히 남기는 것이 안전합니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q4",
+            "question": "보증보험 가입 또는 확인",
+            "answer": "계약 전 가능하다고 들었더라도 입주 후 실제 가입 또는 승인 상태를 확인해야 합니다. 가입 신청, 보완 요청, 승인, 보증서 발급까지 끝났는지 확인합니다.",
+            "situationTags": ["insurance", "guarantee"],
+            "urgency": "high",
+            "actions": ["보증보험 신청 가능 기간을 확인합니다.", "전입신고와 확정일자 후 보증기관에 신청합니다.", "보완 요청이 있으면 기한 내 제출합니다.", "보증서 발급 후 파일과 증권번호를 저장합니다."],
+            "requiredDocuments": ["임대차계약서", "전입세대확인 관련 자료", "확정일자 자료", "등기부등본", "보증보험 신청서", "보증서"],
+            "relatedAgencies": ["HUG", "HF", "SGI서울보증", "은행"],
+            "deadlineNote": "보증보험은 신청 가능 기간과 보완 기한이 있습니다. 계약 후 미루지 않습니다.",
+            "sources": [{"title": "HUG 전세보증금반환보증 가입 안내", "url": "https://www.khug.or.kr/jeonse/web/s04/s040201.jsp", "publisher": "주택도시보증공사", "lastVerifiedAt": "2026-07-01", "note": "보증가입 안내 확인"}, {"title": "HF 전세보증금 반환 청구 절차", "url": "https://www.hf.go.kr/ko/sub02/sub02_05_07.do", "publisher": "한국주택금융공사", "lastVerifiedAt": "2026-07-01", "note": "반환보증 관련 절차 확인"}],
+            "followups": [{"id": "s1_q4_f1", "question": "신청만 하면 가입된 건가요?", "answer": "아닙니다. 심사와 보완을 거쳐 보증서가 발급되어야 합니다. 보증번호와 보증기간을 확인합니다.", "hasChildren": false}]
+          },
+          {
+            "id": "s1_q5",
+            "question": "등기부등본 재확인",
+            "answer": "입주 후에도 등기부등본을 다시 확인해 잔금 직후 근저당이나 소유권 변동이 생기지 않았는지 봅니다. 이상이 있으면 바로 중개사, 보증기관, 법률상담기관에 기록과 함께 문의합니다.",
+            "situationTags": ["registry", "after-move-in"],
+            "urgency": "medium",
+            "actions": ["입주 후 등기부등본을 다시 발급합니다.", "잔금일 이후 권리 변동을 확인합니다.", "특약상 말소되어야 할 권리가 말소됐는지 봅니다.", "이상이 있으면 즉시 상담하고 기록합니다."],
+            "requiredDocuments": ["입주 후 등기부등본", "계약서", "특약", "잔금 이체 내역", "상담 기록"],
+            "relatedAgencies": ["인터넷등기소", "공인중개사", "보증기관", "법률상담기관"],
+            "deadlineNote": "잔금 후 말소 예정 권리가 있으면 말소 완료 등기를 확인할 때까지 기록을 닫지 않습니다.",
+            "sources": [{"title": "대법원 인터넷등기소", "url": "https://www.iros.go.kr/", "publisher": "대한민국 법원", "lastVerifiedAt": "2026-07-01", "note": "등기부등본 열람·발급 경로 확인"}],
+            "followups": [{"id": "s1_q5_f1", "question": "입주 후 새 근저당이 보이면요?", "answer": "권리 순위와 시점이 중요합니다. 등기부 발급본, 계약서, 전입·확정일자 자료를 들고 즉시 보증기관이나 법률상담기관에 문의합니다.", "hasChildren": false}]
+          }
+        ]
+      }
+    ]
+  },
+  "children": {}
+}

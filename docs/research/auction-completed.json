@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "title": "경매·공매가 끝났을 때",
+    "audience": "경매·공매 완료 후 배당과 거주 문제를 정리해야 하는 임차인",
+    "contentType": "question-tree-roadmap",
+    "version": "0.2.1",
+    "lastUpdatedAt": "2026-07-01"
+  },
+  "document": {
+    "sections": [
+      {
+        "id": "s1",
+        "title": "경매·공매가 끝났을 때",
+        "overview": "경매·공매가 끝나면 배당표, 실제 입금, 남은 채권, 거주 종료, 공공지원 연결을 정리해야 합니다. 배당을 받았는지보다 중요한 것은 최종 회수액과 다음 거주 계획입니다.",
+        "questions": [
+          {
+            "id": "s1_q1",
+            "question": "배당 결과 확인",
+            "answer": "배당기일 이후에는 배당표, 실제 입금액, 배당받지 못한 금액, 이의 여부를 확인합니다. 배당요구와 권리 순위 대응을 놓쳤는지 되짚어야 한다면 2-5 경매·공매와 배당 대응하기를 먼저 확인합니다.",
+            "situationTags": ["auction", "distribution"],
+            "urgency": "high",
+            "actions": [
+              "배당표에서 내 채권액, 배당액, 미배당액을 확인합니다.",
+              "입금일과 실제 입금액을 통장 내역과 대조합니다.",
+              "배당이의나 누락 가능성이 있으면 즉시 상담합니다.",
+              "배당표와 낙찰 관련 문서를 같은 폴더에 보관합니다."
+            ],
+            "requiredDocuments": ["배당표", "배당기일 통지서", "입금 내역", "임대차계약서", "확정일자 자료", "등기부등본"],
+            "relatedAgencies": ["법원", "한국자산관리공사", "HUG 경·공매지원센터", "전세피해지원센터"],
+            "deadlineNote": "배당이의, 항고, 보완 제출 등은 짧은 기한이 걸릴 수 있습니다. 배당기일과 통지서 수령일을 기록합니다.",
+            "sources": [
+              {
+                "title": "법제처 배당요구 안내",
+                "url": "https://easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=5&cciNo=2&cnpClsNo=5&csmSeq=629&popMenu=ov",
+                "publisher": "법제처 찾기쉬운 생활법령정보",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "배당요구와 배당 절차 기본 확인"
+              },
+              {
+                "title": "대한민국 법원 법원경매정보",
+                "url": "https://www.courtauction.go.kr/pgj/index.on?w2xPath=%2Fpgj%2Fui%2Fpgj100%2FPGJ159M00.xml",
+                "publisher": "대한민국 법원",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "경매 사건 조회 경로 확인"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q1_f1",
+                "question": "배당표에서 가장 먼저 볼 항목은 무엇인가요?",
+                "answer": "내 채권신고액, 인정된 채권액, 실제 배당액, 미배당액, 다른 선순위 채권자의 배당액을 먼저 봅니다.",
+                "hasChildren": false
+              }
+            ]
+          },
+          {
+            "id": "s1_q2",
+            "question": "배당금을 받은 경우",
+            "answer": "배당금을 받았다면 보증금 중 얼마가 회수됐는지 최종 정산합니다. 보증보험 지급이나 피해자 지원과 중복되는 금액이 있는지도 확인해야 합니다. 전액 회수에 가까운 경우에도 이사·관리비·법률비용 정리는 별도로 남을 수 있습니다.",
+            "situationTags": ["auction", "paid"],
+            "urgency": "medium",
+            "actions": [
+              "배당 입금액을 보증금 원금, 이자, 비용과 나눠 기록합니다.",
+              "보증기관 또는 지원기관에 통지해야 하는지 확인합니다.",
+              "남은 채권이 없다면 사건 종료 문서를 보관합니다.",
+              "남은 금액이 있으면 3-4 보증금을 일부만 회수했을 때로 이어갑니다."
+            ],
+            "requiredDocuments": ["배당표", "입금 내역", "정산표", "보증기관 통지서", "지원 승인 내역"],
+            "relatedAgencies": ["법원", "보증기관", "전세피해지원센터"],
+            "deadlineNote": "배당금 수령 후에도 중복수령 통지, 정산, 비용 청구 기한이 있을 수 있습니다. 기관별 안내문을 확인합니다.",
+            "sources": [
+              {
+                "title": "HUG 경·공매 원스톱 서비스 개요",
+                "url": "https://www.khug.or.kr/jeonse/web/s04/s040001.jsp",
+                "publisher": "주택도시보증공사",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "전세사기 특별법상 경·공매 지원 프로그램 확인"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q2_f1",
+                "question": "배당금을 받으면 보증기관에 알려야 하나요?",
+                "answer": "보증보험 이행이나 지원금과 연결된 사건이라면 통지 필요 여부를 확인해야 합니다. 중복 수령 문제가 생기지 않도록 입금 내역을 보증기관에 확인합니다.",
+                "hasChildren": false
+              }
+            ]
+          },
+          {
+            "id": "s1_q3",
+            "question": "배당을 못 받거나 일부만 받은 경우",
+            "answer": "배당을 못 받았거나 일부만 받았다면 남은 보증금은 잔여 채권으로 관리합니다. 선순위 권리 때문에 회수 가능성이 낮아졌을 수 있으므로, 지급명령·소송·강제집행의 실익을 다시 계산합니다.",
+            "situationTags": ["auction", "partial-recovery", "remaining-claim"],
+            "urgency": "high",
+            "actions": [
+              "미회수 금액을 원금, 지연손해금, 비용으로 나눕니다.",
+              "배당을 못 받은 이유를 배당표와 권리 순위로 확인합니다.",
+              "판결이나 지급명령이 필요한지 2-4 지급명령·보증금반환소송 진행하기를 확인합니다.",
+              "집행 실익은 2-6 강제집행과 장기 회수 관리하기에서 다시 판단합니다."
+            ],
+            "requiredDocuments": ["배당표", "미회수 금액 정리표", "등기부등본", "판결문 또는 지급명령", "상담 기록"],
+            "relatedAgencies": ["법원", "대한법률구조공단", "전세피해지원센터"],
+            "deadlineNote": "배당 결과에 대한 불복이나 후속 법적 대응은 기한이 짧을 수 있습니다. 배당기일 직후 상담을 권합니다.",
+            "sources": [
+              {
+                "title": "법제처 주택임대차 우선변제권 안내",
+                "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=3&cnpClsNo=1&csmSeq=629",
+                "publisher": "법제처 찾기쉬운 생활법령정보",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "대항력과 우선변제권 요건 확인"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q3_f1",
+                "question": "배당을 못 받으면 더 할 수 없나요?",
+                "answer": "그렇지는 않습니다. 다만 집주인의 다른 재산, 집행 비용, 남은 채권액을 비교해야 합니다. 바로 강제집행으로 가기보다 실익 판단이 먼저입니다.",
+                "hasChildren": false
+              }
+            ]
+          },
+          {
+            "id": "s1_q4",
+            "question": "명도·이사·거주 문제 정리",
+            "answer": "낙찰 이후에는 새 소유자와 거주 종료, 이사일, 열쇠 반환, 관리비 정산을 조율해야 할 수 있습니다. 퇴거 압박이 있거나 협의가 어렵다면 상담을 통해 법적 지위와 이사 계획을 같이 확인합니다.",
+            "situationTags": ["auction", "move-out", "housing"],
+            "urgency": "high",
+            "actions": [
+              "낙찰자 또는 새 소유자의 연락 내용을 기록합니다.",
+              "퇴거 요청일, 이사 가능일, 관리비 정산일을 분리합니다.",
+              "집 상태 사진과 계량기 사진을 남깁니다.",
+              "긴급 주거가 필요하면 3-5 주거와 생활을 다시 안정시키기를 확인합니다."
+            ],
+            "requiredDocuments": ["낙찰 관련 통지", "새 소유자 연락 기록", "이사 일정표", "관리비 정산서", "집 상태 사진"],
+            "relatedAgencies": ["법원", "전세피해지원센터", "LH", "지자체"],
+            "deadlineNote": "퇴거일과 배당금 수령일, 새 집 입주일이 어긋날 수 있습니다. 최소 2주 단위로 일정을 다시 확인합니다.",
+            "sources": [
+              {
+                "title": "LH 긴급주거지원 안내",
+                "url": "https://apply.lh.or.kr/lhapply/cm/cntnts/cntntsView.do?cntntsId=1041&mi=1295",
+                "publisher": "LH",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "긴급 주거지원 경로 확인"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q4_f1",
+                "question": "낙찰자가 바로 나가라고 하면요?",
+                "answer": "감정적으로 대응하지 말고 연락 내용을 기록한 뒤, 현재 점유 상태와 법적 지위를 상담합니다. 이사 가능일과 주거지원 필요성도 동시에 확인합니다.",
+                "hasChildren": false
+              }
+            ]
+          },
+          {
+            "id": "s1_q5",
+            "question": "우선매수권을 쓴 경우 후속 처리",
+            "answer": "우선매수권을 사용했다면 이제 피해자이면서 소유자가 되는 절차를 정리해야 합니다. 잔금, 등기, 대출, 세금, 관리비, 거주 계획을 일반 매수 절차처럼 다시 확인합니다.",
+            "situationTags": ["auction", "priority-purchase", "ownership"],
+            "urgency": "medium",
+            "actions": [
+              "매각허가, 잔금 납부, 소유권이전등기 일정을 확인합니다.",
+              "우선매수권 양도나 매입 지원을 이용했다면 기관 통지를 확인합니다.",
+              "대출과 세금 부담을 별도로 계산합니다.",
+              "소유 후 계속 거주할지 매각할지 계획을 세웁니다."
+            ],
+            "requiredDocuments": ["매각허가 관련 서류", "잔금 납부 내역", "등기 신청 서류", "대출 상담 기록", "세금 안내문"],
+            "relatedAgencies": ["법원", "HUG 경·공매지원센터", "등기소", "금융기관", "세무상담기관"],
+            "deadlineNote": "잔금 납부와 등기 관련 기한은 놓치면 불이익이 큽니다. 법원 통지서의 날짜를 최우선으로 봅니다.",
+            "sources": [
+              {
+                "title": "HUG 우선매수권 양도 안내",
+                "url": "https://www.khug.or.kr/jeonse/web/s04/s040004.jsp",
+                "publisher": "주택도시보증공사",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "전세사기 피해 예방 및 경·공매 지원 메뉴의 우선매수권 양도 경로 확인"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q5_f1",
+                "question": "우선매수권을 쓰면 무조건 유리한가요?",
+                "answer": "아닙니다. 잔금, 대출, 세금, 수리비, 향후 매각 가능성까지 계산해야 합니다. 피해 회복과 주택 매수가 동시에 발생하는 절차로 봐야 합니다.",
+                "hasChildren": false
+              }
+            ]
+          },
+          {
+            "id": "s1_q6",
+            "question": "LH 매입이나 공공임대로 연결된 경우",
+            "answer": "LH 매입이나 공공임대로 연결되면 매입 진행 상태, 임대 조건, 입주 가능일, 기존 집 퇴거일을 함께 관리합니다. 공고와 안내문마다 조건이 다르므로 최신 공고를 기준으로 확인합니다.",
+            "situationTags": ["lh", "public-rental", "housing-support"],
+            "urgency": "medium",
+            "actions": [
+              "LH 신청번호와 진행 상태를 기록합니다.",
+              "매입 또는 임대 조건, 보증금, 월임대료, 입주 가능일을 확인합니다.",
+              "기존 집 퇴거 일정과 새 집 입주일을 맞춥니다.",
+              "계약 전에는 4-2 계약 전 위험 신호 확인하기를 다시 봅니다."
+            ],
+            "requiredDocuments": ["피해자 결정문", "LH 신청 접수증", "공고문", "임대 조건 안내문", "입주 안내문"],
+            "relatedAgencies": ["LH", "전세피해지원센터", "지자체"],
+            "deadlineNote": "LH 공고는 접수 기간, 서류 제출 기간, 계약 기간이 각각 다릅니다. 공고문 날짜를 기준으로 일정표를 만듭니다.",
+            "sources": [
+              {
+                "title": "LH 피해주택 매입 안내",
+                "url": "https://apply.lh.or.kr/lhapply/apply/pch/view.do?mi=1076&pchPanSn=1299",
+                "publisher": "LH",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "전세사기 피해주택 매입 관련 안내 확인"
+              },
+              {
+                "title": "LH청약플러스 공지사항",
+                "url": "https://apply.lh.or.kr/lhapply/apply/wt/wrtanc/selectWrtancList.do?mi=1027",
+                "publisher": "LH",
+                "lastVerifiedAt": "2026-07-01",
+                "note": "최신 주거지원 공고 확인 경로"
+              }
+            ],
+            "followups": [
+              {
+                "id": "s1_q6_f1",
+                "question": "LH로 연결되면 바로 입주할 수 있나요?",
+                "answer": "바로 입주한다고 단정할 수 없습니다. 대상 확인, 서류 심사, 계약, 입주 가능일이 따로 있으므로 현재 거주 가능 기간과 공고 일정을 함께 봐야 합니다.",
+                "hasChildren": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "children": {}
+}
