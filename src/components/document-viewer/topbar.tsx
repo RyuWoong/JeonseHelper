@@ -1,4 +1,5 @@
-import { Menu, Search, ShieldCheck } from "lucide-react";
+import Image from "next/image";
+import { Menu, Search } from "lucide-react";
 
 type TopbarProps = {
   onOpenSidebar: () => void;
@@ -19,9 +20,14 @@ export function Topbar({
       >
         <Menu size={20} />
       </button>
-      <a className="brand" href="#top" aria-label="전세 도우미 홈">
-        <ShieldCheck size={22} />
-        <span>전세 도우미</span>
+      <a className="brand" href="#top" aria-label="전세사기 도움집 홈">
+        <Image
+          src="/images/jeonsehelper-header.png"
+          alt=""
+          width={1774}
+          height={887}
+          priority
+        />
       </a>
       <button
         className="search-box"
