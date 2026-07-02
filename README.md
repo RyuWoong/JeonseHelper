@@ -1,27 +1,52 @@
 # JeonseHelper
 
-JeonseHelper is a static, JSON-driven Next.js guide for jeonse basics, fraud prevention, and response workflows. Content lives under `docs/research` and is validated with the Zod schema in `src/lib/content-schema.ts`.
+전세는 한 번의 계약이 생활 전체에 큰 영향을 줄 수 있습니다. JeonseHelper는 전세를 조금 더 조심해서 살펴보고, 전세사기가 의심되거나 이미 문제가 생겼을 때 길고 복잡한 대응 과정을 차분히 따라갈 수 있도록 돕고자 만든 정적 가이드입니다.
 
-## Development
+## 만든 이유
+
+전세와 전세사기 대응 정보를 찾아보면 알아야 할 절차와 기관, 서류가 한꺼번에 쏟아집니다. 계약 전에는 무엇을 확인해야 하는지, 문제가 생긴 뒤에는 보증보험, 피해자 신청, 법원 절차, 경매·공매, 주거 안정 같은 여러 갈래 중 어디부터 봐야 하는지 막막해지기 쉽습니다.
+
+이 프로젝트는 그런 순간에 필요한 정보를 한곳에 차분히 모아두고 싶다는 마음에서 시작했습니다. 전세를 조심하는 데 도움이 되고, 길고 복잡한 해결 과정에서 다음에 확인할 것과 공식 출처를 놓치지 않도록 작은 길잡이가 되었으면 합니다.
+
+법률·행정 절차는 상황과 시점에 따라 달라질 수 있으므로, JeonseHelper의 내용은 판단을 대신하기보다 공식 자료를 확인하고 상담을 준비할 수 있게 정리하는 것을 목표로 합니다.
+
+## 무엇을 담고 있나요
+
+- 전세 기본 개념과 사기 예방 체크
+- 현재 상황을 정리하는 진단형 로드맵
+- 보증보험 여부 확인과 이행청구 흐름
+- 전세사기 피해자 신청, 임차권등기명령, 지급명령·소송 등 주요 절차
+- 피해 회복 이후 주거 안정과 다음 집을 위한 점검 항목
+- 서류, 상담 기록, 기관 연락처, 공식 자료 링크
+
+## 기술 구성
+
+- Next.js
+- TypeScript
+- Zod 기반 콘텐츠 검증
+- `docs/research` 아래의 정적 JSON 콘텐츠
+- 클라이언트 사이드 문서 탐색과 검색
+
+## 개발
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` to view the app.
+앱은 `http://localhost:3000`에서 확인할 수 있습니다.
 
-## Verification
+## 검증
 
-Run the full quality gate before finishing changes:
+변경을 마무리하기 전에 전체 품질 게이트를 실행합니다.
 
 ```bash
 npm run check
 ```
 
-The full check runs lint, TypeScript, content validation, unit tests, and a production build.
+전체 검증은 lint, TypeScript 타입 검사, 콘텐츠 검증, 단위 테스트, 프로덕션 빌드를 순서대로 실행합니다.
 
-Useful individual commands:
+개별 명령은 다음과 같습니다.
 
 ```bash
 npm run lint
