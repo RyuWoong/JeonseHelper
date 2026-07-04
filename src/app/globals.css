@@ -607,7 +607,7 @@ input:focus-visible {
 .document-hero > p,
 .section-heading p,
 .question-block > p,
-.followup-item > p,
+.followup-body > p,
 .child-question p,
 .meta-panel p {
   color: var(--muted);
@@ -934,7 +934,7 @@ h1 {
 }
 
 .question-block > p a,
-.followup-item > p a,
+.followup-body > p a,
 .child-question p a,
 .meta-panel p a {
   color: var(--accent-strong);
@@ -943,7 +943,7 @@ h1 {
 }
 
 .question-block > p a:hover,
-.followup-item > p a:hover,
+.followup-body > p a:hover,
 .child-question p a:hover,
 .meta-panel p a:hover {
   text-decoration: underline;
@@ -1109,7 +1109,7 @@ h1 {
   width: 18px;
 }
 
-.followup-item > p {
+.followup-body > p {
   margin: 10px 0 0 28px;
   font-size: 0.86rem;
 }
@@ -1277,7 +1277,7 @@ h1 {
     gap: 4px;
   }
 
-  .followup-item > p,
+  .followup-body > p,
   .child-list {
     margin-left: 0;
   }
