@@ -862,6 +862,7 @@ h1 {
 }
 
 .question-block {
+  scroll-margin-top: 96px;
   padding: 20px 0 0;
   border: 0;
   border-top: 1px solid var(--line);
