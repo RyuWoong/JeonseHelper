@@ -40,6 +40,12 @@ const sectionSchema = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
   overview: z.string().min(1),
+  analogyBox: z
+    .object({
+      title: z.string().min(1),
+      body: z.string().min(1)
+    })
+    .optional(),
   questions: z.array(questionSchema)
 });
 
@@ -135,4 +141,3 @@ export const contentDocumentSchema = z
   });
 
 export type ContentDocument = z.infer<typeof contentDocumentSchema>;
-

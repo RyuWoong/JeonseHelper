@@ -55,6 +55,12 @@ export function DocumentContent({
               </span>
               <h2>{section.title}</h2>
               <p>{section.overview}</p>
+              {section.analogyBox ? (
+                <aside className="section-analogy-box">
+                  <strong>{section.analogyBox.title}</strong>
+                  <p>{section.analogyBox.body}</p>
+                </aside>
+              ) : null}
             </div>
 
             {isCurrentSituationDiagnosis && section.id === "s1" ? (

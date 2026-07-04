@@ -159,6 +159,20 @@ function collectSearchFields(document: ContentDocument): SearchField[] {
         weight: 45
       }
     );
+    if (section.analogyBox) {
+      fields.push(
+        {
+          fieldLabel: "비유",
+          text: section.analogyBox.title,
+          weight: 35
+        },
+        {
+          fieldLabel: "비유",
+          text: section.analogyBox.body,
+          weight: 35
+        }
+      );
+    }
 
     section.questions.forEach((question) => {
       fields.push(

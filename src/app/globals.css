@@ -856,6 +856,28 @@ h1 {
   font-size: 0.9rem;
 }
 
+.section-analogy-box {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--jh-color-border-subtle);
+  border-left: 4px solid var(--jh-color-action-secondary);
+  border-radius: var(--jh-radius-2);
+  background: var(--jh-color-surface-subtle);
+}
+
+.section-analogy-box strong {
+  color: var(--foreground);
+  font-size: 0.88rem;
+}
+
+.section-analogy-box p {
+  padding: 0;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .question-stack {
   display: grid;
   gap: 0;
