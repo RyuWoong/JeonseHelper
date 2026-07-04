@@ -328,6 +328,43 @@ input:focus-visible {
   font-size: 0.95rem;
 }
 
+.root-nav {
+  display: grid;
+  gap: 2px;
+  padding: 0 28px 20px;
+}
+
+.root-nav-item {
+  width: 100%;
+  min-height: 33px;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.root-nav-item:hover {
+  background: var(--sidebar-strong);
+  color: var(--foreground);
+}
+
+.root-nav-item.is-active {
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.sidebar-section-title {
+  padding: 0 30px 10px;
+  color: var(--subtle);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
 .document-nav {
   display: grid;
   gap: 20px;
@@ -601,17 +638,6 @@ h1 {
 
 .document-hero dl {
   display: none;
-}
-
-.back-link {
-  color: var(--subtle);
-  font-size: 0.76rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  color: var(--foreground);
 }
 
 .updated-row {

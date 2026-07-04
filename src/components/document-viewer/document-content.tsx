@@ -23,9 +23,6 @@ export function DocumentContent({
     <div className="document-content-layout">
       <article className="document-content">
         <header className="document-hero">
-          <a className="back-link" href="#top">
-            &lt; 튜토리얼 목록
-          </a>
           <p>{document.meta.audience}</p>
           <h1>{document.meta.title}</h1>
           <div className="updated-row">

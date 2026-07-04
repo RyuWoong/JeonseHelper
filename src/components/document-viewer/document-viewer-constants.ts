@@ -1,5 +1,7 @@
 import type { DocumentLabel } from "./document-viewer-types";
 
+export const rootNavigationSlugs = ["introduction", "contributing"] as const;
+
 export const documentLabels: Record<string, DocumentLabel> = {
   "jeonse-basics": {
     number: "0-1.",

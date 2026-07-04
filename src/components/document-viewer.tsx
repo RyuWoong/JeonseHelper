@@ -1,13 +1,23 @@
 "use client";
 
-import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useSyncExternalStore
+} from "react";
 import { DocumentContent } from "./document-viewer/document-content";
 import type { DocumentViewerProps } from "./document-viewer/document-viewer-types";
+import {
+  rootNavigationSlugs
+} from "./document-viewer/document-viewer-constants";
 import {
   buildViewerUrl,
   getVisibleChapters,
   readViewerUrlState
 } from "./document-viewer/document-viewer-utils";
+import { buildDocumentTitle } from "@/lib/site-metadata";
 import { Sidebar } from "./document-viewer/sidebar";
 import { SearchDialog } from "./document-viewer/search-dialog";
 import { Topbar } from "./document-viewer/topbar";
@@ -80,6 +90,20 @@ export function DocumentViewer({ documents }: DocumentViewerProps) {
   const activeEntry = selectedEntry ?? documents[0];
 
   const visibleChapters = getVisibleChapters(documents);
+  const rootEntries = rootNavigationSlugs
+    .map((slug) => documents.find((entry) => entry.slug === slug))
+    .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
+
+  useEffect(() => {
+    const nextTitle = buildDocumentTitle(activeEntry?.document.meta.title);
+    document.title = nextTitle;
+
+    const frameId = window.requestAnimationFrame(() => {
+      document.title = nextTitle;
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, [activeEntry]);
 
   const handleSelectDocument = (slug: string) => {
     setIsSidebarOpen(false);
@@ -124,6 +148,7 @@ export function DocumentViewer({ documents }: DocumentViewerProps) {
           isOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
           onSelectDocument={handleSelectDocument}
+          rootEntries={rootEntries}
         />
 
         {isSidebarOpen ? (

@@ -1,5 +1,6 @@
 import { ChevronDown, ChevronRight, X } from "lucide-react";
 import { useMemo, useState } from "react";
+import type { ContentDocumentEntry } from "@/lib/content-loader";
 import { documentLabels } from "./document-viewer-constants";
 import { getActiveChapterId } from "./document-viewer-utils";
 import type { DocumentChapter } from "./document-viewer-types";
@@ -15,6 +16,7 @@ type SidebarProps = {
   isOpen: boolean;
   onClose: () => void;
   onSelectDocument: (slug: string) => void;
+  rootEntries: ContentDocumentEntry[];
 };
 
 export function Sidebar({
@@ -22,7 +24,8 @@ export function Sidebar({
   chapters,
   isOpen,
   onClose,
-  onSelectDocument
+  onSelectDocument,
+  rootEntries
 }: SidebarProps) {
   const activeChapterId = useMemo(
     () => getActiveChapterId(chapters, activeSlug),
@@ -37,15 +40,10 @@ export function Sidebar({
     [activeChapterId, chapterExpansion, chapters]
   );
 
-  const toggleChapter = (chapterId: string) => {
+  const openChapter = (chapter: DocumentChapter) => {
     setChapterExpansion(() => {
       const next = new Set(expandedChapterIds);
-
-      if (next.has(chapterId)) {
-        next.delete(chapterId);
-      } else {
-        next.add(chapterId);
-      }
+      next.add(chapter.id);
 
       if (activeChapterId) {
         next.add(activeChapterId);
@@ -53,6 +51,12 @@ export function Sidebar({
 
       return { ids: next, mode: "custom" };
     });
+
+    const firstEntry = chapter.entries[0];
+
+    if (firstEntry && firstEntry.slug !== activeSlug) {
+      onSelectDocument(firstEntry.slug);
+    }
   };
 
   const expandAllChapters = () => {
@@ -70,7 +74,7 @@ export function Sidebar({
     >
       <div className="sidebar-header">
         <div>
-          <strong>목차</strong>
+          <strong>전세사기 도움집</strong>
         </div>
         <button
           className="icon-button sidebar-close"
@@ -81,6 +85,25 @@ export function Sidebar({
           <X size={18} />
         </button>
       </div>
+
+      <nav className="root-nav" aria-label="주요 문서">
+        {rootEntries.map((entry) => {
+          const isActive = entry.slug === activeSlug;
+
+          return (
+            <button
+              className={isActive ? "root-nav-item is-active" : "root-nav-item"}
+              key={entry.slug}
+              type="button"
+              onClick={() => onSelectDocument(entry.slug)}
+            >
+              {entry.document.meta.title}
+            </button>
+          );
+        })}
+      </nav>
+
+      <div className="sidebar-section-title">목차</div>
 
       <nav className="document-nav">
         {chapters.map((chapter) => {
@@ -93,7 +116,7 @@ export function Sidebar({
                 type="button"
                 aria-expanded={isExpanded}
                 aria-controls={`${chapter.id}-chapter-links`}
-                onClick={() => toggleChapter(chapter.id)}
+                onClick={() => openChapter(chapter)}
               >
                 {isExpanded ? (
                   <ChevronDown size={16} />

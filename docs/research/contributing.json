@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "기여하기",
+    "audience": "전세사기 도움집을 함께 개선하고 싶은 사람",
+    "contentType": "guide-page",
+    "version": "0.1.0",
+    "lastUpdatedAt": "2026-07-04"
+  },
+  "document": {
+    "sections": [
+      {
+        "id": "s1",
+        "title": "함께 개선하는 방법",
+        "overview": "전세사기 대응 정보는 제도, 기관 안내, 지원 요건, 상담 창구가 바뀔 수 있습니다. 틀린 내용, 오래된 링크, 빠진 절차, 더 쉬운 설명을 발견했다면 작은 제안도 도움이 됩니다.",
+        "questions": [
+          {
+            "id": "s1_q1",
+            "question": "어떤 내용을 제안할 수 있나요?",
+            "answer": "오래된 공식 링크, 바뀐 기관 연락처, 실제 절차에서 헷갈리는 표현, 빠진 준비서류, 더 나은 문서 흐름을 제안할 수 있습니다. 개인 사례를 공유할 때는 이름, 주소, 연락처, 사건번호 같은 식별 정보가 드러나지 않게 정리해야 합니다.",
+            "situationTags": ["contribution", "content"],
+            "urgency": "low",
+            "actions": [
+              "수정이 필요한 문서 제목과 위치를 적습니다.",
+              "가능하면 근거가 되는 공식 자료 링크를 함께 남깁니다.",
+              "개인정보와 사건 식별 정보는 제거합니다."
+            ],
+            "requiredDocuments": [],
+            "relatedAgencies": [],
+            "deadlineNote": "",
+            "sources": [],
+            "followups": []
+          },
+          {
+            "id": "s1_q2",
+            "question": "좋은 기여는 어떤 형태인가요?",
+            "answer": "읽는 사람이 바로 행동할 수 있도록 짧고 구체적인 문장으로 제안하는 것이 좋습니다. 제도 설명은 공식 출처를 붙이고, 절차 안내는 필요한 서류, 기관, 기한이 함께 보이도록 정리하면 검토하기 쉽습니다.",
+            "situationTags": ["contribution", "quality"],
+            "urgency": "low",
+            "actions": [
+              "한 번에 하나의 주제만 제안합니다.",
+              "사실 확인이 필요한 문장에는 출처를 붙입니다.",
+              "법률 판단처럼 보일 수 있는 표현은 공식 상담 준비를 돕는 표현으로 바꿉니다."
+            ],
+            "requiredDocuments": [],
+            "relatedAgencies": [],
+            "deadlineNote": "",
+            "sources": [],
+            "followups": []
+          }
+        ]
+      }
+    ]
+  },
+  "children": {}
+}

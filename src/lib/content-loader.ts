@@ -5,6 +5,7 @@ import auctionDistributionResponse from "../../docs/research/auction-distributio
 import beforeContractCheck from "../../docs/research/before-contract-check.json";
 import caseNumberTracker from "../../docs/research/case-number-tracker.json";
 import consultationLog from "../../docs/research/consultation-log.json";
+import contributing from "../../docs/research/contributing.json";
 import contractDayCheck from "../../docs/research/contract-day-check.json";
 import currentSituationDiagnosis from "../../docs/research/current-situation-diagnosis.json";
 import documentChecklist from "../../docs/research/document-checklist.json";
@@ -15,6 +16,7 @@ import housingLifeStabilization from "../../docs/research/housing-life-stabiliza
 import insuranceClaim from "../../docs/research/insurance-claim.json";
 import insuranceClaimCompleted from "../../docs/research/insurance-claim-completed.json";
 import insuranceStatusCheck from "../../docs/research/insurance-status-check.json";
+import introduction from "../../docs/research/introduction.json";
 import jeonseBasics from "../../docs/research/jeonse-basics.json";
 import juniorPriorityResponse from "../../docs/research/junior-priority-response.json";
 import leaseRegistrationOrder from "../../docs/research/lease-registration-order.json";
@@ -38,6 +40,8 @@ export type ContentDocumentEntry = {
 };
 
 const rawDocuments = [
+  ["introduction", introduction],
+  ["contributing", contributing],
   ["jeonse-basics", jeonseBasics],
   ["fraud-prevention", fraudPrevention],
   ["suspected-fraud-roadmap", suspectedFraudRoadmap],
